@@ -2,7 +2,7 @@
 
 let pin_padrao = 12345+'';
 
-let pin_entrada;
+let pin_entrada = 0;
 
 do{
 
@@ -13,7 +13,7 @@ do{
 
 
 function verifica_pin (pin) {
-
+		
     if (pin == pin_padrao){
         document.write(parabens() + "<br>O pin introduzido está correto, sem mais nem menos!");
         alert(parabens() + "\nO pin está correto!");
@@ -22,6 +22,7 @@ function verifica_pin (pin) {
     }
 
     else if (pin != pin_padrao) {
+    
         pin += '';
         
         if(pin != pin_padrao && pin.length == pin_padrao.length){
